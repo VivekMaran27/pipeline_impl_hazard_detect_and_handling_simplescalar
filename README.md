@@ -21,7 +21,7 @@ it to fit our project requirements.
 ## Running the simulator:
 - cd build/simplesim-3.0
 - make (This will build simple scalar)
-- cd ../../test_outputs (Once simple scalar is build go the test directory)
+- cd ../../test (Once simple scalar is build go the test directory)
 - sslittle-na-sstrix-gcc -s test.s -o test -nostdlib (Build test code)
 - ../build/simplesim-3.0/sim-pipe test
 
