@@ -19,9 +19,12 @@ We have aggregated implementations from the above cited sources, and tailored
 it to fit our project requirements.
 
 ## Running the simulator:
-- cd build/simplesim-3.0
+- git submodule update --init simplescalar (Checkout simplescalar submodule)
+- cd simplescalar/build/
+- git submodule update --init sim-pipe (Checkout sim-pipe submodule)
+- cd simplesim-3.0
 - make (This will build simple scalar)
-- cd ../../test (Once simple scalar is build go the test directory)
+- cd ../../../test (Once simple scalar is build go the test directory)
 - sslittle-na-sstrix-gcc -s test.s -o test -nostdlib (Build test code)
-- ../build/simplesim-3.0/sim-pipe test
+- ../simplescalar/build/simplesim-3.0/sim-pipe test
 
